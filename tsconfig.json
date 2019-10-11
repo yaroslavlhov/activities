@@ -4,12 +4,14 @@
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
+    "strictPropertyInitialization": false,
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "noImplicitAny": false,
     "baseUrl": ".",
     "types": [
       "webpack-env"
@@ -31,7 +33,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx", "src/services/notification.service.ts"
   ],
   "exclude": [
     "node_modules"
